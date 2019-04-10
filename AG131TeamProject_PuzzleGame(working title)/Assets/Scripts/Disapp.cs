@@ -6,6 +6,8 @@ public class Disapp : MonoBehaviour
 {
     public float timer;
     public float starttimer = 5.0f;
+
+    int counter;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,5 +18,12 @@ public class Disapp : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
+
+        counter = (int)Mathf.Ceil(timer);
+        if(counter == 0)
+        {
+            gameObject.SetActive(false);
+            timer = starttimer;
+        }
     }
 }
