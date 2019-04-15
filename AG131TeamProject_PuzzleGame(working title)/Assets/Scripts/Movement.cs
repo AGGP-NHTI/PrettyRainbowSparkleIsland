@@ -11,14 +11,17 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
+        //Get component on game object
         CharacterController controller = GetComponent<CharacterController>();
 
+        //Only allow movement when the character is grounded
         if (controller.isGrounded)
         {
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= speed;
 
+            //Compensate for diagonal movement 
             Vector3.ClampMagnitude(moveDirection, 1);
 
             if (Input.GetButtonDown("Jump"))
@@ -27,6 +30,7 @@ public class Movement : MonoBehaviour
             }
         }
 
+        //Apply gravity through code
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
     }
