@@ -26,11 +26,15 @@ public class Dialouge : MonoBehaviour
     }
    public void Untranslated()
     {
+        RemoveChildren();
         dialouge = new Story(untranslated.text);
+        RefreshView();
     }
    public void Translated()
     {
+        RemoveChildren();
         dialouge = new Story(translated.text);
+        RefreshView();
     }
     void RemoveChildren()
     {
