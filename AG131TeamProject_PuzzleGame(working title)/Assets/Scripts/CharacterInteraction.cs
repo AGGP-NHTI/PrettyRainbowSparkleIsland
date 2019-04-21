@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class CharacterInteraction : MonoBehaviour
 {
+    Inventory inv;
     GameObject trnsl;
     // Start is called before the first frame update
     void Start()
     {
-        trnsl = gameObject.GetComponentInChildren<GameObject>();
+        inv = gameObject.GetComponentInChildren<Inventory>();
+        trnsl = inv.inventory[0];
     }
 
     // Update is called once per frame
