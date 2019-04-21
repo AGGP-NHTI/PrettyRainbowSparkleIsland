@@ -18,7 +18,7 @@ public class Inventory : MonoBehaviour
     {
         
     }
-    void ObtainedItem()
+    public void ObtainedItem()
     {
         inventory.Capacity++;
         for(int i = 0; i < inventory.Capacity; i++)

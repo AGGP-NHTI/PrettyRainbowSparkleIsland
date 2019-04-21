@@ -8,7 +8,7 @@ public class CharacterInteraction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        trnsl = gameObject.GetComponentInParent<GameObject>();
+        trnsl = gameObject.GetComponentInChildren<GameObject>();
     }
 
     // Update is called once per frame
@@ -18,6 +18,17 @@ public class CharacterInteraction : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        
+        Dialouge d = other.GetComponentInParent<Dialouge>();
+        if(d)
+        {
+            if(trnsl)
+            {
+                d.Translated();
+            }
+            else
+            {
+                d.Untranslated();
+            }
+        }
     }
 }
