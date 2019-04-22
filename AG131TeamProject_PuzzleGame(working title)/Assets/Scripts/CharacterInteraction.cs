@@ -9,7 +9,7 @@ public class CharacterInteraction : MonoBehaviour
     GameObject trnsl;
 
     public GameObject Eyes;
-    float Check = 2.0f;
+    float Check = 5.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +21,11 @@ public class CharacterInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        DrawDebugRay();
+        if(interaction)
+        {
+            GetInteraction();
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -46,7 +50,7 @@ public class CharacterInteraction : MonoBehaviour
     {
         Ray see = new Ray();
 
-        see.origin = Eyes.transform.position;
+        
         see.direction = Eyes.transform.forward;
 
         RaycastHit hit;
@@ -60,5 +64,14 @@ public class CharacterInteraction : MonoBehaviour
                 d.Translated();
             }
         }
+    }
+    public void DrawDebugRay()
+    {
+        float drawLength = Check;
+        Vector3 origin = Eyes.transform.position;
+        Vector3 direction = origin + (Eyes.transform.forward * Check);
+        Color drawColor = Color.red;
+        Debug.DrawRay(origin, direction, drawColor);
+
     }
 }
