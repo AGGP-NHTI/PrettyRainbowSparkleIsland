@@ -299,6 +299,18 @@ MonoBehaviour:
   inventory:
   - {fileID: 2020805326209637150, guid: 7cf9c66f4c1d4dd4096560203110d7de, type: 3}
   newitem: {fileID: 2020805326209637150, guid: 7cf9c66f4c1d4dd4096560203110d7de, type: 3}
+--- !u!114 &274700920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274700912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8af0d99e1196c242bd0ba913117cebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &332674978
 GameObject:
   m_ObjectHideFlags: 0
