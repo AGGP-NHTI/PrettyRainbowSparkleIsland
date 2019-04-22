@@ -38,7 +38,7 @@ public class ButtonManager : MonoBehaviour
         {
             if(first.pressed == true)
             {
-                D.Opened();
+                D.requesttoopen = true;
             }
         }
         else
@@ -57,7 +57,7 @@ public class ButtonManager : MonoBehaviour
             }
             else if(first.pressed == true && second.pressed == true && third.pressed == true && fourth.pressed == true)
             {
-                D.Opened();
+                D.requesttoopen = true;
             }
         }
     }
