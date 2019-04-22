@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class CharacterInteraction : MonoBehaviour
 {
+    bool interaction = false;
     Inventory inv;
     GameObject trnsl;
+
+    public GameObject Eyes;
+    float Check = 2.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +35,29 @@ public class CharacterInteraction : MonoBehaviour
             else
             {
                 d.Untranslated();
+            }
+        }
+    }
+    void GetInteraction()
+    {
+        interaction = Input.GetKeyDown("Interaction");
+    }
+    void Seek()
+    {
+        Ray see = new Ray();
+
+        see.origin = Eyes.transform.position;
+        see.direction = Eyes.transform.forward;
+
+        RaycastHit hit;
+
+        bool hashit = Physics.Raycast(see, out hit, Check);
+        if(hashit)
+        {
+            Dialouge d = hit.collider.gameObject.GetComponentInParent<Dialouge>();
+            if(d)
+            {
+                d.Translated();
             }
         }
     }
