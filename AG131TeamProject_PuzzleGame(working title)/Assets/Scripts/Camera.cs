@@ -18,8 +18,8 @@ public class Camera : MonoBehaviour
         character = this.transform.parent.gameObject;
 
         //On start hide and lock cursor position
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
