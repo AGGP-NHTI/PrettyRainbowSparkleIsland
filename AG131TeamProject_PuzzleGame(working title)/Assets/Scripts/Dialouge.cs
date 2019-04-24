@@ -12,18 +12,31 @@ public class Dialouge : MonoBehaviour
     private Story dialouge;
     public Canvas canvas;
 
+    public float timer;
+    public float starttimer = 5.0f;
+
+    int counter;
+
     public Text textprefab;
     public Button button;
     // Start is called before the first frame update
     void Start()
     {
-        
+        timer = starttimer;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        timer -= Time.deltaTime;
+
+        counter = (int)Mathf.Ceil(timer);
+
+        if (counter == 0)
+        {
+            RemoveChildren();
+            timer = starttimer;
+        }
     }
    public void Untranslated()
     {
@@ -62,32 +75,7 @@ public class Dialouge : MonoBehaviour
         }
 
 
-        if (dialouge.currentChoices.Count > 0)
-        {
-            for (int i = 0; i < dialouge.currentChoices.Count; i++)
-            {
-                Choice choice = dialouge.currentChoices[i];
-                Button button = CreateChoiceView(choice.text.Trim());
-
-                button.onClick.AddListener(delegate {
-                    OnClickChoiceButton(choice);
-                });
-            }
-        }
-
-        else
-        {
-            Button choice = CreateChoiceView("Exit");
-            choice.onClick.AddListener(delegate {
-                RemoveChildren();
-            });
-        }
-    }
-    
-    void OnClickChoiceButton(Choice choice)
-    {
-        dialouge.ChooseChoiceIndex(choice.index);
-        RefreshView();
+        
     }
 
  
@@ -98,20 +86,4 @@ public class Dialouge : MonoBehaviour
         storyText.transform.SetParent(canvas.transform, false);
     }
 
-
-    Button CreateChoiceView(string text)
-    {
-        Button choice = Instantiate(button) as Button;
-        choice.transform.SetParent(canvas.transform, false);
-
-
-        Text choiceText = choice.GetComponentInChildren<Text>();
-        choiceText.text = text;
-
-
-        HorizontalLayoutGroup layoutGroup = choice.GetComponent<HorizontalLayoutGroup>();
-        layoutGroup.childForceExpandHeight = false;
-
-        return choice;
-    }
 }
