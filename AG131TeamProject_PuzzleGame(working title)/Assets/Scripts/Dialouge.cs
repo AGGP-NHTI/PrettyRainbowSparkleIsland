@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//NOTE: PRIMARILY USES BASICINKSCRIPT FROM PLUGIN, BASICINKSCRIPT PROVIDED BY INK.
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -100,7 +101,6 @@ public class Dialouge : MonoBehaviour
 
     Button CreateChoiceView(string text)
     {
-
         Button choice = Instantiate(button) as Button;
         choice.transform.SetParent(canvas.transform, false);
 
