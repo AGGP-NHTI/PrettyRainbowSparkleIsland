@@ -1,0 +1,56 @@
+SEED HUNTER Instructions
+(Inside The Vault / Unity Challenge)
+
+1. Setup
+
+In order to make sure everything runs as intended, please assign correct HDRenderPipelineAsset:
+
+Edit > Project Settings > Graphics > Scriptable Render Pipeline Settings
+
+Select "HDRenderPipelineAsset_SeedHunter" from Polygonautic/SeedHunter/Settings
+
+It is recommended to use HDRP 4.10.0 or above.
+
+
+2. Assets Organization
+
+All graphical assets are located in respective Art folders, further categorized into logical sub-folders for easier navigation.
+
+Each asset shares same unique name across prefab, model, textures, material and Painter project.
+
+We are using these prefixes for quicker search:
+
+env_ (environmental assets, split into Hallway and Chamber categories)
+prop_ (detailed prop assets, split into several categories)
+coll_ (lowpoly collision models)
+tile_ (seamless textures and materials that are not dependant on unique models UVs)
+decal_ (textures and materials used for Decal Projectors)
+cookie_ (textures used for Light Cookies)
+pattern_ (utility textures for various effects and masks)
+DetailMap_ (textures with specific channels to be used as Detail Maps only in Lit shader - materials are only for showcase purposes)
+Emissive_ (common emissive materials that are not dependant on unique models UVs)
+
+
+3. Demo Scenes
+
+Two scenes are included: AssetShowcase and SeedHunter
+
+AssetShowcase is filled with all the prefabs that were used in building the SeedHunter scene. You can explore each module / asset on it's own.
+
+SeedHunter is a complex real-time scene with lighting, effects, post-processes and further showcases what is possible to build from provided assets.
+
+
+4. Substance Painter Projects
+
+With all the source Substance Painter files (.spp) project would be immensely large (over 10 GB), so we made them downloadable separately.
+
+You can grab these Painter sources here: https://www.dropbox.com/s/h44p6xegs06hr77/InsideTheVault_SeedHunter_SubstancePainterProjects.zip?dl=0
+
+
+5. Shaders
+
+Included is a simple vertex animation shader for Grass created in ShaderGraph.
+
+In order for shader to work, you need to have a ShaderGraph package installed. There is also a classic Lit material for Grass set as default.
+
+It is recommended to use ShaderGraph 4.10.0 or above.

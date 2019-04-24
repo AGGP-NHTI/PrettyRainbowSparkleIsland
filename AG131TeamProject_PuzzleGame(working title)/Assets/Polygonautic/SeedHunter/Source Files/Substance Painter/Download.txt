@@ -1,0 +1,3 @@
+With all the source Substance Painter files (.spp) project would be immensely large (over 10 GB), so made them downloadable separately.
+
+You can grab these Painter sources here: https://www.dropbox.com/s/h44p6xegs06hr77/InsideTheVault_SeedHunter_SubstancePainterProjects.zip?dl=0
