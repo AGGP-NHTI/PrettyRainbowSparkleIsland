@@ -24,9 +24,13 @@ public class ButtonManager : MonoBehaviour
     void Start()
     {
          first = ButtonOne.GetComponent<WeightButton>();
-        second = ButtonTwo.GetComponent<WeightButton>();
-         third = ButtonThree.GetComponent<WeightButton>();
-        fourth = ButtonFour.GetComponent<WeightButton>();
+        if(Multibutton)
+        {
+            second = ButtonTwo.GetComponent<WeightButton>();
+            third = ButtonThree.GetComponent<WeightButton>();
+            fourth = ButtonFour.GetComponent<WeightButton>();
+        }
+       
 
          D = door.GetComponent<Door>();
     }
