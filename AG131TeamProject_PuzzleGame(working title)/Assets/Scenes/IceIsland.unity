@@ -117723,10 +117723,14 @@ PrefabInstance:
       propertyPath: m_RootOrder
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 0
 =======
       value: 4
 >>>>>>> 93585baab086d53285f83e0a618b9a3286d31f8b
+=======
+      value: 1
+>>>>>>> parent of 904e818... PuzzleWork
 =======
       value: 1
 >>>>>>> parent of 904e818... PuzzleWork
@@ -117793,6 +117797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &2077268345 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 71dba5f8b9a67a5459c81163c273f120,
@@ -117814,6 +117819,8 @@ BoxCollider:
   m_Center: {x: 0, y: 0, z: -0.00017488003}
 =======
 >>>>>>> parent of 73892e6... crate
+=======
+>>>>>>> parent of 904e818... PuzzleWork
 =======
 >>>>>>> parent of 904e818... PuzzleWork
 --- !u!1001 &2077771576
