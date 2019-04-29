@@ -39,6 +39,7 @@ public class Pickup : MonoBehaviour
             //Collide needs to stay active for raycast to work
             //GetComponent<BoxCollider>().enabled = false;
             GetComponent<Rigidbody>().useGravity = false;
+            GetComponent<Rigidbody>().isKinematic = true;
             this.transform.position = theDest.position;
             this.transform.parent = GameObject.Find("PlayerController").transform;
         }
@@ -50,8 +51,9 @@ public class Pickup : MonoBehaviour
     {
         counter = false;
         this.transform.parent = null;
-        GetComponent<BoxCollider>().enabled = true;
+        //GetComponent<BoxCollider>().enabled = true;
         GetComponent<Rigidbody>().useGravity = true;
+        GetComponent<Rigidbody>().isKinematic = false;
     }
 
     void OnMouseEnter()
