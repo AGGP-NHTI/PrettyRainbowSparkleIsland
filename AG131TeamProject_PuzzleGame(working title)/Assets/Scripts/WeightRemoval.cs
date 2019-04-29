@@ -29,7 +29,7 @@ public class WeightRemoval : MonoBehaviour
         else
         {
             other.gameObject.AddComponent<Weight>();
-            Instantiate(snow, start);
+            Instantiate(snowprefab, start);
         }
     }
 }
