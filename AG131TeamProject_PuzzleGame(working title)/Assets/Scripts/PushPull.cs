@@ -41,6 +41,7 @@ public class PushPull : MonoBehaviour
         }
 
     }
+<<<<<<< HEAD
 
     void OnTriggerEnter(Collider other)
     {
@@ -52,6 +53,8 @@ public class PushPull : MonoBehaviour
     {
         Debug.Log("oncollision")
     }
+=======
+>>>>>>> parent of 904e818... PuzzleWork
     void OnMouseUp()
     {
         counter = false;
