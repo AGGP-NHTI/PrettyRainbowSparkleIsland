@@ -25,7 +25,7 @@ public class BlueGem : MonoBehaviour
         //Light Torches
         foreach (GameObject torch in torches)
         {
-            torch.SetActive(true);
+            torch.GetComponent<ParticleSystem>().Play();
         }
 
         //Open door
@@ -37,7 +37,8 @@ public class BlueGem : MonoBehaviour
         //Put out torches
         foreach (GameObject torch in torches)
         {
-            torch.SetActive(false);
+            //torch.SetActive(false);
+            torch.GetComponent<ParticleSystem>().Stop();
         }
 
         //Close door

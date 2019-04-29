@@ -35,18 +35,31 @@ public class RaycastTool : MonoBehaviour
 
         if (Physics.Raycast(transform.position, fwd, out hit, rayLength))
         {
+            //LOOK FOR PICKUP TAGGED OBJECTS
             if (hit.collider.CompareTag("Pickup"))
             {
                 raycastedObject = hit.collider.gameObject;
-
+               
                 if (Input.GetButtonDown("Fire1"))
                 {
-                    Debug.Log("THIS WORKS (down)");
-                    hit.transform.SendMessage("down");            
+                    //Call down() in other objects pickup script
+                    hit.transform.SendMessage("down");
+
+                    //Check for gem type script on object
+                    if (hit.transform.GetComponent<BlueGem>())
+                    {
+                        hit.transform.SendMessage("enableEffects");
+                    } //add other gems with else if GreenGem etc...
 
                 } else if (Input.GetButtonUp("Fire1")) {
-                    Debug.Log("THIS WORKS (UP)");
+
+                    //Call onUp() in other objects pickup script
                     hit.transform.SendMessage("onUp");
+
+                    if (hit.transform.GetComponent<BlueGem>())
+                    {
+                        hit.transform.SendMessage("disableEffects");
+                    }
                 }
             }
         }
