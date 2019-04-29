@@ -20,7 +20,7 @@ public class WeightRemoval : MonoBehaviour
         Weight w = other.GetComponentInParent<Weight>();
         if (w)
         {
-            Destroy(other.GetComponentInParent<Weigth>());
+            Destroy(other.GetComponentInParent<Weight>());
 
         }
 
