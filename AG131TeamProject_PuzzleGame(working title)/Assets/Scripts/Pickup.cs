@@ -28,27 +28,32 @@ public class Pickup : MonoBehaviour
             this.transform.position = theDest.position;
         }
     }
-    void OnMouseDown()
+
+    //Gets called from raycast script on camera
+    public void down()
     {
         //if statement here so that you can only pickup objects close enough to you
         if(distanceDiffx < 1 || distanceDiffz < 1)
         {
             counter = true;
-            GetComponent<BoxCollider>().enabled = false;
+            //Collide needs to stay active for raycast to work
+            //GetComponent<BoxCollider>().enabled = false;
             GetComponent<Rigidbody>().useGravity = false;
             this.transform.position = theDest.position;
             this.transform.parent = GameObject.Find("PlayerController").transform;
         }
 
     }
-    void OnMouseUp()
+
+    //Gets called from raycast script on camera
+    public void onUp()
     {
         counter = false;
         this.transform.parent = null;
         GetComponent<BoxCollider>().enabled = true;
         GetComponent<Rigidbody>().useGravity = true;
-
     }
+
     void OnMouseEnter()
     {
         startColor = this.GetComponent<Renderer>().material.color;
