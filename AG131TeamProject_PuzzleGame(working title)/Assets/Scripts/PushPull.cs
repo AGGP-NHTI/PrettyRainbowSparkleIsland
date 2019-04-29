@@ -44,7 +44,13 @@ public class PushPull : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log("ontrig");
         this.transform.parent = null;
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("oncollision")
     }
     void OnMouseUp()
     {
