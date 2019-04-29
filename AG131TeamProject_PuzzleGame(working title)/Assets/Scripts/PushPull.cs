@@ -41,6 +41,11 @@ public class PushPull : MonoBehaviour
         }
 
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        this.transform.parent = null;
+    }
     void OnMouseUp()
     {
         counter = false;
