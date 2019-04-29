@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class WeightRemoval : MonoBehaviour
 {
+    public GameObject snow;
+    public GameObject snowprefab;
+    Transform start;
     // Start is called before the first frame update
     void Start()
     {
-        
+        start = snow.GetComponent<Transform>();
     }
 
     // Update is called once per frame
@@ -21,10 +24,12 @@ public class WeightRemoval : MonoBehaviour
         if(w)
         {
             Destroy(other.GetComponentInParent<Weight>());
+            Destroy(snow);
         }
         else
         {
             other.gameObject.AddComponent<Weight>();
+            Instantiate(snow, start);
         }
     }
 }

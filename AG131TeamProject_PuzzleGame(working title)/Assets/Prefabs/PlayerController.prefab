@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3034918035185892569}
   - component: {fileID: 3034918035185892566}
   - component: {fileID: 3034918035185892567}
+  - component: {fileID: 1938813093238181241}
+  - component: {fileID: 3309314518358410644}
   m_Layer: 0
   m_Name: PlayerController
   m_TagString: Untagged
@@ -66,6 +68,31 @@ MonoBehaviour:
   speed: 6
   jumpSpeed: 8
   gravity: 20
+--- !u!114 &1938813093238181241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3034918035185892564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8af0d99e1196c242bd0ba913117cebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3309314518358410644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3034918035185892564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c576294646d8ef43b2a3a19a0e2912b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayLength: 10
 --- !u!1 &3034918036659927814
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,6 +204,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rayLength: 10
-  layerMaskInteract:
-    serializedVersion: 2
-    m_Bits: 512
