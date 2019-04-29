@@ -13,9 +13,17 @@ public class Pickup : MonoBehaviour
     //used for highlighting the object that you can interact with
     private Color startColor;
 
+    public Color objColor;
+
     //used to determine the distance between player and object trying to pickup
     private float distanceDiffx;
     private float distanceDiffz;
+
+    private void Start()
+    {
+        //Make obj NOT invisible
+        objColor.a = 1;
+    }
 
     void Update()
     {
@@ -59,7 +67,7 @@ public class Pickup : MonoBehaviour
     void OnMouseEnter()
     {
         startColor = this.GetComponent<Renderer>().material.color;
-        GetComponent<Renderer>().material.color = Color.yellow;
+        GetComponent<Renderer>().material.color = objColor;
     }
 
     void OnMouseExit()
