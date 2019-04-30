@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ToIceWorld : MonoBehaviour
 {
-    string ice = "IceIsland";
+    string ice = "IceIslandOLD";
     // Start is called before the first frame update
     void Start()
     {
