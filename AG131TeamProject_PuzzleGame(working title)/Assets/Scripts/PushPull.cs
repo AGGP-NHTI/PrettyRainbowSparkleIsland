@@ -32,7 +32,7 @@ public class PushPull : MonoBehaviour
     void OnMouseDown()
     {
         //if statement here so that you can only pickup objects close enough to you
-        if (distanceDiffx < 1.2 || distanceDiffz < 1.2)
+        if (distanceDiffx < 1.2 || distanceDiffz < 1.2 && distanceDiffx > 0.2 && distanceDiffz > 0.2)
         {
             lockRot = true;
             counter = true;
