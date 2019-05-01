@@ -7,10 +7,6 @@ public class PushPull : MonoBehaviour
     //STILL BEING WORKED ON RIGHT NOW JUST IS PICKUP SCRIPT, plan on using similar approach to push/pull objects
 
 
-
-    //used simply so that object picked up moves with player if being held
-    private bool counter = false;
-
     //locks moving/rotation in certain instances when pushing boxes
     public static bool lockRot = false;
     public static bool lockMove = false;
@@ -25,23 +21,23 @@ public class PushPull : MonoBehaviour
     private float OriginalSpeed;
     void Update()
     {
-        //calculates distance between player and object trying to pickup, only x and z matter
+        //calculates distance between player and object trying to push, only x and z matter
         distanceDiffx = Mathf.Abs(this.transform.position.x - GameObject.Find("PlayerController").transform.position.x);
         distanceDiffz = Mathf.Abs(this.transform.position.z - GameObject.Find("PlayerController").transform.position.z);
     }
     void OnMouseDown()
     {
-        //if statement here so that you can only pickup objects close enough to you
-        if (distanceDiffx < 1.2 || distanceDiffz < 1.2 && distanceDiffx > 0.2 && distanceDiffz > 0.2)
+        //if statement here so that you can only push objects close enough to you
+        if (distanceDiffx < .5 || distanceDiffz < .5)
         {
+            Debug.Log("Sucks");
             lockRot = true;
-            counter = true;
             GetComponent<Rigidbody>().useGravity = false;
             this.transform.parent = GameObject.Find("PlayerController").transform;
             OriginalSpeed = GameObject.Find("PlayerController").GetComponent<Movement>().speed;
             GameObject.Find("PlayerController").GetComponent<Movement>().speed = 2.0f;
-
         }
+        Debug.Log("MouseDown");
 
     }
 
@@ -49,21 +45,19 @@ public class PushPull : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         this.transform.parent = null;
-        if (Input.GetButton("Fire1"))
-        {
-            lockMove = true;
-        }
-
     }
 
     void OnMouseUp()
     {
-        lockRot = false;
-        lockMove = false;
-        counter = false;
-        this.transform.parent = null;
-        GetComponent<Rigidbody>().useGravity = true;
-        GameObject.Find("PlayerController").GetComponent<Movement>().speed = OriginalSpeed;
+        Debug.Log("MouseUp");
+        if (distanceDiffx < 1 || distanceDiffz < 1)
+        {
+            lockRot = false;
+            lockMove = false;
+            this.transform.parent = null;
+            GetComponent<Rigidbody>().useGravity = true;
+            GameObject.Find("PlayerController").GetComponent<Movement>().speed = OriginalSpeed;
+        }
 
     }
     void OnMouseEnter()
