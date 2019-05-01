@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PushPull : MonoBehaviour
 {
-    //STILL BEING WORKED ON RIGHT NOW JUST IS PICKUP SCRIPT, plan on using similar approach to push/pull objects
-
 
     //locks moving/rotation in certain instances when pushing boxes
     public static bool lockRot = false;
@@ -19,25 +17,18 @@ public class PushPull : MonoBehaviour
     private float distanceDiffz;
 
     private float OriginalSpeed;
-    void Update()
-    {
-        //calculates distance between player and object trying to push, only x and z matter
-        distanceDiffx = Mathf.Abs(this.transform.position.x - GameObject.Find("PlayerController").transform.position.x);
-        distanceDiffz = Mathf.Abs(this.transform.position.z - GameObject.Find("PlayerController").transform.position.z);
-    }
+
     void OnMouseDown()
     {
         //if statement here so that you can only push objects close enough to you
-        if (distanceDiffx < .5 || distanceDiffz < .5)
+        if (RaycastTool.PushPullRange == true)
         {
-            Debug.Log("Sucks");
             lockRot = true;
             GetComponent<Rigidbody>().useGravity = false;
             this.transform.parent = GameObject.Find("PlayerController").transform;
             OriginalSpeed = GameObject.Find("PlayerController").GetComponent<Movement>().speed;
             GameObject.Find("PlayerController").GetComponent<Movement>().speed = 2.0f;
         }
-        Debug.Log("MouseDown");
 
     }
 
@@ -49,8 +40,7 @@ public class PushPull : MonoBehaviour
 
     void OnMouseUp()
     {
-        Debug.Log("MouseUp");
-        if (distanceDiffx < 1 || distanceDiffz < 1)
+        if (RaycastTool.PushPullRange == true)
         {
             lockRot = false;
             lockMove = false;

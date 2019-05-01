@@ -11,6 +11,9 @@ public class RaycastTool : MonoBehaviour
     [SerializeField]
     private int rayLength = 10;
 
+    public static bool PushPullRange = false;
+
+
     //[SerializeField]
     //private LayerMask layerMaskInteract;
 
@@ -39,7 +42,7 @@ public class RaycastTool : MonoBehaviour
             if (hit.collider.CompareTag("Pickup"))
             {
                 raycastedObject = hit.collider.gameObject;
-               
+
                 if (Input.GetButtonDown("Fire1"))
                 {
                     //Call down() in other objects pickup script
@@ -51,7 +54,9 @@ public class RaycastTool : MonoBehaviour
                         hit.transform.SendMessage("enableEffects");
                     } //add other gems with else if GreenGem etc...
 
-                } else if (Input.GetButtonUp("Fire1")) {
+                }
+                else if (Input.GetButtonUp("Fire1"))
+                {
 
                     //Call onUp() in other objects pickup script
                     hit.transform.SendMessage("onUp");
@@ -62,10 +67,16 @@ public class RaycastTool : MonoBehaviour
                     }
                 }
             }
+            if (hit.collider.CompareTag("Crate"))
+            {
+                PushPullRange = true;
+            }
+
         }
         else
         {
             //Default State
+            PushPullRange = false;
         }
 
     }
