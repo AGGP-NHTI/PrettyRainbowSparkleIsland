@@ -17,7 +17,7 @@ public class Credits : MonoBehaviour
     int counter;
 
     public Text textprefab;
-    public Button button;
+
     // Start is called before the first frame update
     void Start()
     {
