@@ -11,6 +11,8 @@ public class PushPull : MonoBehaviour
     //used simply so that object picked up moves with player if being held
     private bool counter = false;
 
+    public static bool lockRot = false;
+
     //used for highlighting the object that you can interact with
     private Color startColor;
 
@@ -28,8 +30,9 @@ public class PushPull : MonoBehaviour
     void OnMouseDown()
     {
         //if statement here so that you can only pickup objects close enough to you
-        if (distanceDiffx < 0.8 || distanceDiffz < 0.8)
+        if (distanceDiffx < 1 || distanceDiffz < 1)
         {
+            lockRot = true;
             counter = true;
             GetComponent<Rigidbody>().useGravity = false;
             this.transform.parent = GameObject.Find("PlayerController").transform;
@@ -55,6 +58,7 @@ public class PushPull : MonoBehaviour
 
     void OnMouseUp()
     {
+        lockRot = false;
         counter = false;
         this.transform.parent = null;
         GetComponent<Rigidbody>().useGravity = true;

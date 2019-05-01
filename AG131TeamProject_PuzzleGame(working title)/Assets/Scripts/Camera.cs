@@ -38,11 +38,14 @@ public class Camera : MonoBehaviour
         //Locks ability to look past stright up and down
         mouseLook.y = Mathf.Clamp(mouseLook.y, -90f, 90f);
 
-        //Rotate camera up/down
-        transform.localRotation = Quaternion.AngleAxis(-mouseLook.y, Vector3.right);
+        if(PushPull.lockRot == false)
+        {
+            //Rotate camera up/down
+            transform.localRotation = Quaternion.AngleAxis(-mouseLook.y, Vector3.right);
 
-        //Use character body for left/right rotation
-        character.transform.localRotation = Quaternion.AngleAxis(mouseLook.x, Vector3.up);
+            //Use character body for left/right rotation
+            character.transform.localRotation = Quaternion.AngleAxis(mouseLook.x, Vector3.up);
+        }
     }
 }
 
