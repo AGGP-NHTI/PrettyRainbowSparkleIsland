@@ -5,8 +5,9 @@
 KARATE ISLAND
 by Team PrettyRainbowSparkleIsland
 
-*Start Game
+*[Start Game]
+->DONE
 
-*Exit Game
+*[Exit Game]
 
 ->DONE
