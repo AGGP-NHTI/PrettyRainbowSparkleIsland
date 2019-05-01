@@ -17,9 +17,10 @@ public class Movement : MonoBehaviour
         //Only allow movement when the character is grounded
         if (controller.isGrounded)
         {
-            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-            moveDirection = transform.TransformDirection(moveDirection);
-            moveDirection *= speed;
+                moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+                moveDirection = transform.TransformDirection(moveDirection);
+                moveDirection *= speed;
+
 
             //Compensate for diagonal movement 
             Vector3.ClampMagnitude(moveDirection, 1);
@@ -30,9 +31,12 @@ public class Movement : MonoBehaviour
             }
         }
 
-        //Apply gravity through code
-        moveDirection.y -= gravity * Time.deltaTime;
-        controller.Move(moveDirection * Time.deltaTime);
+        if (PushPull.lockMove == false)
+        {
+            //Apply gravity through code
+            moveDirection.y -= gravity * Time.deltaTime;
+            controller.Move(moveDirection * Time.deltaTime);
+        }
     }
 
 }

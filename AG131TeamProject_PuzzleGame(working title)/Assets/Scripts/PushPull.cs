@@ -11,7 +11,9 @@ public class PushPull : MonoBehaviour
     //used simply so that object picked up moves with player if being held
     private bool counter = false;
 
+    //locks moving/rotation in certain instances when pushing boxes
     public static bool lockRot = false;
+    public static bool lockMove = false;
 
     //used for highlighting the object that you can interact with
     private Color startColor;
@@ -30,7 +32,7 @@ public class PushPull : MonoBehaviour
     void OnMouseDown()
     {
         //if statement here so that you can only pickup objects close enough to you
-        if (distanceDiffx < 1 || distanceDiffz < 1)
+        if (distanceDiffx < 1.2 || distanceDiffz < 1.2)
         {
             lockRot = true;
             counter = true;
@@ -44,21 +46,20 @@ public class PushPull : MonoBehaviour
     }
 
 
-    void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("ontrig");
-        this.transform.parent = null;
-    }
-
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("oncollision");
         this.transform.parent = null;
+        if (Input.GetButton("Fire1"))
+        {
+            lockMove = true;
+        }
+
     }
 
     void OnMouseUp()
     {
         lockRot = false;
+        lockMove = false;
         counter = false;
         this.transform.parent = null;
         GetComponent<Rigidbody>().useGravity = true;

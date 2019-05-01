@@ -25,7 +25,6 @@ public class Camera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         //Get current mouse pos
         Vector2 md = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
 
