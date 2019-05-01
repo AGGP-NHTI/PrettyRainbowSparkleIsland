@@ -7,7 +7,7 @@ using Ink.Runtime;
 
 public class Dialouge : MonoBehaviour
 {
-    public TextAsset untranslated;
+   
     public TextAsset translated;
     private Story dialouge;
     public Canvas canvas;
@@ -38,12 +38,7 @@ public class Dialouge : MonoBehaviour
             timer = starttimer;
         }
     }
-   public void Untranslated()
-    {
-        RemoveChildren();
-        dialouge = new Story(untranslated.text);
-        RefreshView();
-    }
+
    public void Translated()
     {
         RemoveChildren();

@@ -28,14 +28,10 @@ public class CharacterInteraction : MonoBehaviour
         Dialouge d = other.GetComponentInParent<Dialouge>();
         if(d)
         {
-            if(trnsl)
-            {
+            
                 d.Translated();
-            }
-            else
-            {
-                d.Untranslated();
-            }
+            
+         
         }
     }
 
