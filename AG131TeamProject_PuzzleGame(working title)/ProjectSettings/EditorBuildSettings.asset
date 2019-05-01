@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainIsland.unity
     guid: 97cb9bc01be4f0f41b4ab2917bca9cd8
   - enabled: 1
-    path: Assets/Scenes/IceIsland.unity
+    path: Assets/Scenes/IceIsland/IceIsland.unity
     guid: f3416b46578130d4faf1c18202248c68
   m_configObjects: {}
