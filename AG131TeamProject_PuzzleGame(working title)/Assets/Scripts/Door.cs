@@ -1,41 +1,48 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
 public class Door : MonoBehaviour
 {
-    Vector3 Close;
-    public Vector3 Open;
 
-   public bool requesttoopen = false;
+    public Transform doorTransform;
+    public float raiseHeight = 3f;
+    public float speed = 3f;
+    private Vector3 _closedPosition;
+    public AudioClip openSound;
+    public AudioClip closeSound;
 
-    public delegate void DoorDelegate();
-    DoorDelegate state;
-
-    // Start is called before the first frame update
+    // Use this for initialization
     void Start()
     {
-        Close = gameObject.transform.position;
-        state += Closed;
+        _closedPosition = transform.position;
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter(Collider other)
     {
-        state.Invoke();
-        if(requesttoopen)
+        StopCoroutine("MoveDoor");
+        Vector3 endpos = _closedPosition + new Vector3(0f, raiseHeight, 0f);
+        StartCoroutine("MoveDoor", endpos);
+        //audio.PlayOneShot(openSound);
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        StopCoroutine("MoveDoor");
+        StartCoroutine("MoveDoor", _closedPosition);
+        //audio.PlayOneShot (closeSound);
+    }
+
+
+    IEnumerator MoveDoor(Vector3 endPos)
+    {
+
+        float t = 0f;
+        Vector3 startPos = doorTransform.position;
+
+        while (doorTransform.position != endPos)
         {
-            state -= Closed;
-            state += Opened;
-            requesttoopen = false;
+            doorTransform.position = Vector3.MoveTowards(startPos, endPos, Time.deltaTime * speed);
+            yield return null;
         }
-    }
-    public void Opened()
-    {
-        gameObject.transform.position = Open;
-    }
-    public void Closed()
-    {
-        gameObject.transform.position = Close;
     }
 }
