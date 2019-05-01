@@ -7,6 +7,7 @@ public class BlueGem : MonoBehaviour
     //Reference to all torch flames
     public List<GameObject> torches = new List<GameObject>();
 
+
     // Start is called before the first frame update
     void Start()
     {
