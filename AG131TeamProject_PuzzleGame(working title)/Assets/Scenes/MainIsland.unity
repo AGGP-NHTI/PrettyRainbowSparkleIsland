@@ -12678,7 +12678,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-182320
+  m_Name: pb_Mesh79254
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -17332,7 +17332,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1239604871
 GameObject:
@@ -19030,7 +19030,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh73424
+  m_Name: pb_Mesh78710
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -27076,7 +27076,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 922137842}
 --- !u!114 &1949527093
@@ -29875,7 +29875,7 @@ Transform:
   - {fileID: 6304217033278467278}
   - {fileID: 127555892}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 10.997001, y: -24.509, z: -23.966002}
 --- !u!4 &6304217033278467288
 Transform:
