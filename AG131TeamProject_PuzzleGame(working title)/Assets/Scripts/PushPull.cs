@@ -24,8 +24,6 @@ public class PushPull : MonoBehaviour
         //calculates distance between player and object trying to pickup, only x and z matter
         distanceDiffx = Mathf.Abs(this.transform.position.x - GameObject.Find("PlayerController").transform.position.x);
         distanceDiffz = Mathf.Abs(this.transform.position.z - GameObject.Find("PlayerController").transform.position.z);
-        Debug.Log(distanceDiffx);
-        Debug.Log(distanceDiffz);
     }
     void OnMouseDown()
     {
@@ -52,6 +50,7 @@ public class PushPull : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         Debug.Log("oncollision");
+        this.transform.parent = null;
     }
 
     void OnMouseUp()
