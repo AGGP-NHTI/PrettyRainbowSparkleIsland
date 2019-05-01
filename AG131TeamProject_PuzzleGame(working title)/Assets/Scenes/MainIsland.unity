@@ -348,7 +348,8 @@ PrefabInstance:
       propertyPath: starttimer
       value: 7
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5766457976740589719, guid: 96df49ddd7ee3a947b2a73f350e42125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 96df49ddd7ee3a947b2a73f350e42125, type: 3}
 --- !u!4 &58238233 stripped
 Transform:
