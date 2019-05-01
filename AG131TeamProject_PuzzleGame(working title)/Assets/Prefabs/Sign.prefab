@@ -104,7 +104,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcf4b44583b62474685c2bd015f2ad8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  untranslated: {fileID: 0}
   translated: {fileID: 0}
   canvas: {fileID: 0}
   timer: 0
@@ -199,9 +198,9 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7073363511418746723}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
+  m_Radius: 3.5
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
@@ -217,7 +216,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcf4b44583b62474685c2bd015f2ad8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  untranslated: {fileID: 0}
   translated: {fileID: 0}
   canvas: {fileID: 0}
   timer: 0

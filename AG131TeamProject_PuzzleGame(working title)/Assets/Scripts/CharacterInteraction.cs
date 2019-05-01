@@ -4,18 +4,11 @@ using UnityEngine;
 
 public class CharacterInteraction : MonoBehaviour
 {
-    bool interaction = false;
-    Inventory inv;
-    GameObject trnsl;
-
- 
-    float Check = 5.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        inv = gameObject.GetComponentInChildren<Inventory>();
-        trnsl = inv.inventory[0];
+     
     }
 
     // Update is called once per frame
