@@ -3,8 +3,9 @@ using System.Collections;
 
 public class Door : MonoBehaviour
 {
+    public bool requesttoopen = false;
 
-    public Transform doorTransform;
+
     public float raiseHeight = 3f;
     public float speed = 3f;
     private Vector3 _closedPosition;
@@ -16,8 +17,14 @@ public class Door : MonoBehaviour
     {
         _closedPosition = transform.position;
     }
-
-    void OnTriggerEnter(Collider other)
+     void Update()
+    {
+        if(requesttoopen)
+        {
+            Open();
+        }
+    }
+    void Open()
     {
         StopCoroutine("MoveDoor");
         Vector3 endpos = _closedPosition + new Vector3(0f, raiseHeight, 0f);
@@ -25,7 +32,7 @@ public class Door : MonoBehaviour
         //audio.PlayOneShot(openSound);
     }
 
-    void OnTriggerExit(Collider other)
+    void Close()
     {
         StopCoroutine("MoveDoor");
         StartCoroutine("MoveDoor", _closedPosition);
@@ -37,11 +44,11 @@ public class Door : MonoBehaviour
     {
 
         float t = 0f;
-        Vector3 startPos = doorTransform.position;
+        Vector3 startPos = gameObject.transform.position;
 
-        while (doorTransform.position != endPos)
+        while (gameObject.transform.position != endPos)
         {
-            doorTransform.position = Vector3.MoveTowards(startPos, endPos, Time.deltaTime * speed);
+            gameObject.transform.position = Vector3.MoveTowards(startPos, endPos, Time.deltaTime * speed);
             yield return null;
         }
     }
