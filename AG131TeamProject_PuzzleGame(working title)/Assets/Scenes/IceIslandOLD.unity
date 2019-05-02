@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.03174638, g: 0.21283689, b: 0.32599998, a: 1}
+  m_IndirectSpecularColor: {r: 0.03184378, g: 0.21287018, b: 0.3259518, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -54943,13 +54943,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1034954829}
-  m_LocalRotation: {x: -0.7010464, y: -0.09237973, z: -0.09237968, w: 0.7010463}
-  m_LocalPosition: {x: 0.0143, y: 0.0453, z: 0.004}
+  m_LocalRotation: {x: -0.702798, y: -0.09372187, z: -0.091943726, w: 0.69916916}
+  m_LocalPosition: {x: 0.01429975, y: 0.04530001, z: 0.0040002167}
   m_LocalScale: {x: 0.051961593, y: 0.051961593, z: 0.069281995}
   m_Children: []
   m_Father: {fileID: 2015055955}
   m_RootOrder: 108
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.326996, y: 18.56099, z: -33.648987}
 --- !u!108 &1034954831
 Light:
   m_ObjectHideFlags: 0
@@ -57390,6 +57390,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonDoorManager (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7167314273932016889, guid: 4b169f33add23914ebc04091f723ff6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7167314273799010279, guid: 4b169f33add23914ebc04091f723ff6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7167314274932432005, guid: 4b169f33add23914ebc04091f723ff6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7167314273713997154, guid: 4b169f33add23914ebc04091f723ff6a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -57504,21 +57519,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 10.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7167314273932016889, guid: 4b169f33add23914ebc04091f723ff6a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7167314273799010279, guid: 4b169f33add23914ebc04091f723ff6a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7167314274932432005, guid: 4b169f33add23914ebc04091f723ff6a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7167314273747808796, guid: 4b169f33add23914ebc04091f723ff6a,
         type: 3}
