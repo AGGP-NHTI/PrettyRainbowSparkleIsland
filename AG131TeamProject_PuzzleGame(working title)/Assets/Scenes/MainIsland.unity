@@ -8592,7 +8592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99893f47a37a6504aa492eda43b6e6df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorTransform: {fileID: 549755303}
+  requesttoopen: 0
   raiseHeight: 3
   speed: 3
   openSound: {fileID: 0}
@@ -26367,8 +26367,9 @@ PrefabInstance:
         type: 3}
       propertyPath: translated
       value: 
-      objectReference: {fileID: 4900000, guid: d81ee1f3b1885e84ea733f09e1cc51ce, type: 3}
-    m_RemovedComponents: []
+      objectReference: {fileID: 4900000, guid: e7ae070e370eaae4893f0e051ad32c92, type: 3}
+    m_RemovedComponents:
+    - {fileID: 5766457976740589719, guid: 96df49ddd7ee3a947b2a73f350e42125, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 96df49ddd7ee3a947b2a73f350e42125, type: 3}
 --- !u!43 &1911812353
 Mesh:
@@ -29299,6 +29300,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3034918035185892564, guid: 0499efe03c85f5641b8b79901006c244,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerController
+      objectReference: {fileID: 0}
     - target: {fileID: 3034918035185892569, guid: 0499efe03c85f5641b8b79901006c244,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29353,11 +29359,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3034918035185892564, guid: 0499efe03c85f5641b8b79901006c244,
-        type: 3}
-      propertyPath: m_Name
-      value: PlayerController
       objectReference: {fileID: 0}
     - target: {fileID: 8358483563251429123, guid: 0499efe03c85f5641b8b79901006c244,
         type: 3}

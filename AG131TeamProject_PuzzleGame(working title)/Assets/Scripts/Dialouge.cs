@@ -50,7 +50,11 @@ public class Dialouge : MonoBehaviour
         int childCount = canvas.transform.childCount;
         for (int i = childCount - 1; i >= 0; --i)
         {
-            GameObject.Destroy(canvas.transform.GetChild(i).gameObject);
+            if(canvas.transform.GetChild(i).gameObject != canvas.transform.Find("crosshair").gameObject)
+            {
+                GameObject.Destroy(canvas.transform.GetChild(i).gameObject);
+            }
+            
         }
     }
     void RefreshView()
