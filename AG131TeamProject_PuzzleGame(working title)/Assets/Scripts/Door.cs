@@ -7,6 +7,7 @@ public class Door : MonoBehaviour
 
 
     public float raiseHeight = 3f;
+    public float raiseZ = 3f;
     public float speed = 3f;
     private Vector3 _closedPosition;
     public AudioClip openSound;
@@ -23,11 +24,15 @@ public class Door : MonoBehaviour
         {
             Open();
         }
+        else
+        {
+            Close();
+        }
     }
     void Open()
     {
         StopCoroutine("MoveDoor");
-        Vector3 endpos = _closedPosition + new Vector3(0f, raiseHeight, 0f);
+        Vector3 endpos = _closedPosition + new Vector3(0f, raiseHeight, raiseZ);
         StartCoroutine("MoveDoor", endpos);
         //audio.PlayOneShot(openSound);
     }
