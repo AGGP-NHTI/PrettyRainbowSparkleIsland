@@ -8183,7 +8183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theDest: {fileID: 1557190263}
-  objColor: {r: 0, g: 0, b: 0, a: 0}
+  objColor: {r: 0.7830189, g: 0.7830189, b: 0.7830189, a: 0}
 --- !u!43 &89374206
 Mesh:
   m_ObjectHideFlags: 0
@@ -27682,7 +27682,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1020553949454940, guid: 1d5f3ac72f6110748ba6fc868876f5a4, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4908593620999422, guid: 1d5f3ac72f6110748ba6fc868876f5a4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -86013,7 +86013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theDest: {fileID: 1557190263}
-  objColor: {r: 0, g: 0, b: 0, a: 0}
+  objColor: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 0}
 --- !u!1001 &1586379512
 PrefabInstance:
   m_ObjectHideFlags: 0
