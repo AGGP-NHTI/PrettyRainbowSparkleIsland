@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/IceIslandOLD.unity
     guid: cffaf232868fa39458dfea1e76caf5ed
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 859d7b292d0bd044aac0d33899f78a2c
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 85627e605c3b4fb49bab45719d1234b2
   m_configObjects: {}
