@@ -45,5 +45,13 @@ MonoBehaviour:
     inkAsset: {fileID: 102900000, guid: fa4e437af48f6424f9a3bfa70fb5194a, type: 3}
     jsonAssetPath: {fileID: 0}
     jsonAsset: {fileID: 4900000, guid: e7ae070e370eaae4893f0e051ad32c92, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: d81cf18837117d841a94f9bea9ea6b4b, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 7cce56fc075a19240bb67c6013488e31, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 48da7b2ddfb55e747965ff643c296e39, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: fb2b40ec509dcef44a496ccbe7b030df, type: 3}
   pendingCompilationStack: []
   compilationStack: []
