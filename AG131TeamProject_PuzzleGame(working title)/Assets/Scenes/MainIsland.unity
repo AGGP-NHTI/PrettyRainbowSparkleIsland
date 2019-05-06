@@ -29422,6 +29422,11 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 3034918036659927818, guid: 0499efe03c85f5641b8b79901006c244,
+        type: 3}
+      propertyPath: sensitivity
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 8358483563251429123, guid: 0499efe03c85f5641b8b79901006c244,
         type: 3}
       propertyPath: rayLength
