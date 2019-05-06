@@ -52,7 +52,11 @@ public class RaycastTool : MonoBehaviour
                     if (hit.transform.GetComponent<BlueGem>())
                     {
                         hit.transform.SendMessage("enableEffects");
-                    } //add other gems with else if GreenGem etc...
+                    }
+                    else if (hit.transform.GetComponent<MagicKey>())
+                    {
+                        hit.transform.SendMessage("enableEffects");
+                    }//add other gems with else if GreenGem etc...
 
                 }
                 else if (Input.GetButtonUp("Fire1"))
@@ -65,13 +69,18 @@ public class RaycastTool : MonoBehaviour
                     {
                         hit.transform.SendMessage("disableEffects");
                     }
+                    else if (hit.transform.GetComponent<MagicKey>())
+                    {
+                        hit.transform.SendMessage("disableEffects");
+                    }//add other gems with else if GreenGem etc...
                 }
             }
+
+            //LOOK FOR CRATE TAGGED OBJECTS
             if (hit.collider.CompareTag("Crate"))
             {
                 PushPullRange = true;
             }
-
         }
         else
         {

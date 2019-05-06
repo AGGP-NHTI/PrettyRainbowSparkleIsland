@@ -5,7 +5,6 @@ public class Door : MonoBehaviour
 {
     public bool requesttoopen = false;
 
-
     public float raiseHeight = 3f;
     public float raiseZ = 3f;
     public float speed = 3f;
