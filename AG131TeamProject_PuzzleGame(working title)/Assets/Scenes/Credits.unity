@@ -573,6 +573,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   credits: {fileID: 4900000, guid: 158d5d9bac041254e953b1b71ff9ddb7, type: 3}
   second: {fileID: 4900000, guid: dcfdd8eaadc833142a6a2895ade5e969, type: 3}
+  music: {fileID: 4900000, guid: d6d4ab61503967541a9dd05dbe6e7748, type: 3}
+  mainisland: {fileID: 4900000, guid: 633512d3da81f8a40a8f5eeca3635749, type: 3}
+  iceisland: {fileID: 4900000, guid: fe69667a93d291349a0d426d0fbdb364, type: 3}
   canvas: {fileID: 610860605}
   timer: 0
   starttimer: 5
