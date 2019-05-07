@@ -33,6 +33,8 @@ public class RaycastTool : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Debug.Log(Input.GetAxisRaw("Fire1"));
+
         RaycastHit hit;
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
 
@@ -43,7 +45,7 @@ public class RaycastTool : MonoBehaviour
             {
                 raycastedObject = hit.collider.gameObject;
 
-                if (Input.GetButtonDown("Fire1"))
+                if (Input.GetAxisRaw("Fire1") > 0)
                 {
                     //Call down() in other objects pickup script
                     hit.transform.SendMessage("down");
@@ -59,7 +61,7 @@ public class RaycastTool : MonoBehaviour
                     }//add other gems with else if GreenGem etc...
 
                 }
-                else if (Input.GetButtonUp("Fire1"))
+                else
                 {
 
                     //Call onUp() in other objects pickup script
