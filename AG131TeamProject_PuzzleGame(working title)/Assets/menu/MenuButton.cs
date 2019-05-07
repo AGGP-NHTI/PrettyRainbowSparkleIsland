@@ -21,16 +21,22 @@ public class MenuButton : MonoBehaviour
 			if(Input.GetAxis ("Submit") == 1){
 
                 animator.SetBool("pressed", true);
-                SceneManager.LoadScene("MainIsland");
+           
 
             }
             else if (animator.GetBool ("pressed")){
-				animator.SetBool ("pressed", false);
-                SceneManager.LoadScene("Quit");
+				animator.SetBool ("selected", false);
+                    SceneManager.LoadScene("MainIsland");
                 animatorFunctions.disableOnce = true;
 			}
-		}else{
-			animator.SetBool ("selected", false);
+            
+     
 		}
+        else
+        {
+			animator.SetBool ("selected", false);
+            Application.Quit();
+            //SceneManager.LoadScene("Quit");
+        }
     }
 }
