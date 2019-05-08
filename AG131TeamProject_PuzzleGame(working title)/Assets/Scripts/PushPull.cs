@@ -23,6 +23,8 @@ public class PushPull : MonoBehaviour
         //if statement here so that you can only push objects close enough to you
         //if (RaycastTool.PushPullRange == true)
         //{
+        Debug.Log("USEPULLPUSH");
+
             lockRot = true;
             GetComponent<Rigidbody>().useGravity = false;
             this.transform.parent = GameObject.Find("PlayerController").transform;

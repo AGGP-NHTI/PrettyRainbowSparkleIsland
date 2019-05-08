@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0019899793, g: 0.011371848, b: 0.029858742, a: 1}
+  m_IndirectSpecularColor: {r: 0.001989793, g: 0.011373026, b: 0.029857054, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -389,6 +389,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crate (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -8860,6 +8865,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LargeCrate (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2034547113184925680, guid: 7f339237034f72344984a0575486ee76,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 2034547113184496592, guid: 7f339237034f72344984a0575486ee76,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12978,6 +12988,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14133,6 +14148,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15038,6 +15058,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15414,6 +15439,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crate (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -16379,6 +16409,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LargeCrate (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034547113184925680, guid: 7f339237034f72344984a0575486ee76,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 2034547113184496592, guid: 7f339237034f72344984a0575486ee76,
         type: 3}
@@ -18042,6 +18077,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18502,6 +18542,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18799,6 +18844,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LargeCrate (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034547113184925680, guid: 7f339237034f72344984a0575486ee76,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 2034547113184496592, guid: 7f339237034f72344984a0575486ee76,
         type: 3}
@@ -21143,6 +21193,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22048,6 +22103,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22532,6 +22592,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22601,6 +22666,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22669,6 +22739,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crate (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -23978,6 +24053,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LargeCrate (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034547113184925680, guid: 7f339237034f72344984a0575486ee76,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 2034547113184496592, guid: 7f339237034f72344984a0575486ee76,
         type: 3}
@@ -25626,6 +25706,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26529,6 +26614,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crate (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -27628,6 +27718,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27765,6 +27860,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LargeCrate (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034547113184925680, guid: 7f339237034f72344984a0575486ee76,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 2034547113184496592, guid: 7f339237034f72344984a0575486ee76,
         type: 3}
@@ -30581,7 +30681,7 @@ PrefabInstance:
     - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_TagString
-      value: Crate
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -31356,6 +31456,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LargeCrate (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034547113184925680, guid: 7f339237034f72344984a0575486ee76,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 2034547113184496592, guid: 7f339237034f72344984a0575486ee76,
         type: 3}
@@ -33338,6 +33443,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34044,6 +34154,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34280,6 +34395,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crate (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -35422,7 +35542,7 @@ PrefabInstance:
     - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_TagString
-      value: Crate
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -36099,6 +36219,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -36401,6 +36526,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -36469,6 +36599,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crate (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -39885,6 +40020,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LargeCrate (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034547113184925680, guid: 7f339237034f72344984a0575486ee76,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 2034547113184496592, guid: 7f339237034f72344984a0575486ee76,
         type: 3}
@@ -44866,6 +45006,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -45683,6 +45828,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crate (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -47579,6 +47729,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -47807,6 +47962,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LargeCrate (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034547113184925680, guid: 7f339237034f72344984a0575486ee76,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 2034547113184496592, guid: 7f339237034f72344984a0575486ee76,
         type: 3}
@@ -48273,6 +48433,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LargeCrate (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034547113184925680, guid: 7f339237034f72344984a0575486ee76,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 2034547113184496592, guid: 7f339237034f72344984a0575486ee76,
         type: 3}
@@ -52532,6 +52697,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -52626,6 +52796,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crate (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -52855,6 +53030,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LargeCrate (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034547113184925680, guid: 7f339237034f72344984a0575486ee76,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 2034547113184496592, guid: 7f339237034f72344984a0575486ee76,
         type: 3}
@@ -55055,6 +55235,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -56297,6 +56482,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -57504,6 +57694,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -58605,6 +58800,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -58913,6 +59113,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -59168,6 +59373,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LargeCrate (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2034547113184925680, guid: 7f339237034f72344984a0575486ee76,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 2034547113184496592, guid: 7f339237034f72344984a0575486ee76,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -59236,6 +59446,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LargeCrate (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034547113184925680, guid: 7f339237034f72344984a0575486ee76,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 2034547113184496592, guid: 7f339237034f72344984a0575486ee76,
         type: 3}
@@ -63830,6 +64045,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -64037,6 +64257,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -64105,6 +64330,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crate (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -64293,6 +64523,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LargeCrate (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034547113184925680, guid: 7f339237034f72344984a0575486ee76,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 2034547113184496592, guid: 7f339237034f72344984a0575486ee76,
         type: 3}
@@ -66429,6 +66664,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -66673,6 +66913,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crate (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -68697,6 +68942,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crate (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -72093,6 +72343,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LargeCrate (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2034547113184925680, guid: 7f339237034f72344984a0575486ee76,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 2034547113184496592, guid: 7f339237034f72344984a0575486ee76,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -73207,6 +73462,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LargeCrate (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034547113184925680, guid: 7f339237034f72344984a0575486ee76,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 2034547113184496592, guid: 7f339237034f72344984a0575486ee76,
         type: 3}
@@ -79608,6 +79868,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -82742,6 +83007,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -83831,6 +84101,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LargeCrate (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2034547113184925680, guid: 7f339237034f72344984a0575486ee76,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 2034547113184496592, guid: 7f339237034f72344984a0575486ee76,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -83899,6 +84174,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crate (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -84272,6 +84552,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crate (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -84820,6 +85105,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crate (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -90586,6 +90876,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -91657,6 +91952,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -91922,6 +92222,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -91990,6 +92295,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crate (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -92311,6 +92621,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -92379,6 +92694,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crate (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -93053,6 +93373,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crate (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -94040,6 +94365,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LargeCrate (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 2034547113184925680, guid: 7f339237034f72344984a0575486ee76,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 2034547113184496592, guid: 7f339237034f72344984a0575486ee76,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -94108,6 +94438,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LargeCrate (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034547113184925680, guid: 7f339237034f72344984a0575486ee76,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 2034547113184496592, guid: 7f339237034f72344984a0575486ee76,
         type: 3}
@@ -96506,6 +96841,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -96643,6 +96983,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crate (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -99020,6 +99365,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -99993,6 +100343,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -100130,6 +100485,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crate (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -100294,6 +100654,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LargeCrate (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034547113184925680, guid: 7f339237034f72344984a0575486ee76,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 2034547113184496592, guid: 7f339237034f72344984a0575486ee76,
         type: 3}
@@ -101617,6 +101982,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -102568,7 +102938,7 @@ PrefabInstance:
     - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_TagString
-      value: Crate
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -102583,7 +102953,7 @@ PrefabInstance:
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 43.91
+      value: 43.78
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -105929,6 +106299,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -106066,6 +106441,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crate (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -106873,7 +107253,7 @@ PrefabInstance:
     - target: {fileID: 4297610206947275696, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
       propertyPath: m_TagString
-      value: Crate
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 4297610206946848656, guid: 2796351dca2f44b4f96b5649aca97b8d,
         type: 3}
@@ -108993,6 +109373,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LargeCrate (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 2034547113184925680, guid: 7f339237034f72344984a0575486ee76,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 2034547113184496592, guid: 7f339237034f72344984a0575486ee76,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -109290,6 +109675,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LargeCrate
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034547113184925680, guid: 7f339237034f72344984a0575486ee76,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 2034547113184496592, guid: 7f339237034f72344984a0575486ee76,
         type: 3}

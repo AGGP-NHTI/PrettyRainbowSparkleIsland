@@ -45,6 +45,8 @@ public class RaycastTool : MonoBehaviour
             {
                 raycastedObject = hit.collider.gameObject;
 
+                //Debug.Log("PUSH PULL FOUND");
+
                 if (Input.GetAxisRaw("Fire1") > 0)
                 {
                     //Call down() in other objects pickup script
@@ -52,6 +54,7 @@ public class RaycastTool : MonoBehaviour
 
                     if (hit.transform.GetComponent<PushPull>())
                     {
+                        Debug.Log("PUSH PULL FOUND");
                         hit.transform.SendMessage("usePullPush");
                     }
 
