@@ -21,14 +21,14 @@ public class PushPull : MonoBehaviour
     public void usePullPush()
     {
         //if statement here so that you can only push objects close enough to you
-        if (RaycastTool.PushPullRange == true)
-        {
+        //if (RaycastTool.PushPullRange == true)
+        //{
             lockRot = true;
             GetComponent<Rigidbody>().useGravity = false;
             this.transform.parent = GameObject.Find("PlayerController").transform;
             OriginalSpeed = GameObject.Find("PlayerController").GetComponent<Movement>().speed;
             GameObject.Find("PlayerController").GetComponent<Movement>().speed = 2.0f;
-        }
+        //}
 
     }
 
@@ -38,16 +38,16 @@ public class PushPull : MonoBehaviour
         this.transform.parent = null;
     }
 
-    void pushPullUp()
+    public void pushPullUp()
     {
-        if (RaycastTool.PushPullRange == true)
-        {
+        //if (RaycastTool.PushPullRange == true)
+        //{
             lockRot = false;
             lockMove = false;
             this.transform.parent = null;
             GetComponent<Rigidbody>().useGravity = true;
             GameObject.Find("PlayerController").GetComponent<Movement>().speed = OriginalSpeed;
-        }
+        //}
 
     }
     void OnMouseEnter()

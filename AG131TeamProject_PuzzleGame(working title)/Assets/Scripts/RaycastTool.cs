@@ -89,10 +89,10 @@ public class RaycastTool : MonoBehaviour
             }
 
             //LOOK FOR CRATE TAGGED OBJECTS
-            if (hit.collider.CompareTag("Crate"))
-            {
-                PushPullRange = true;
-            }
+            //if (hit.collider.CompareTag("Crate"))
+            //{
+                //PushPullRange = true;
+            //}
         }
         else
         {
