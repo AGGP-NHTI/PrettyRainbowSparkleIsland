@@ -2,22 +2,24 @@
 
 ==Assets==
 
-Snow Mountain by
+Snow Mountain by ProAssets
 
 Low Poly Tree Pack by grey Road Studio
 
-Free Low Poly Nature Assets by
+Free Low Poly Nature Assets by Marco
 
-Fantasy Sky Background by
+Fantasy Sky Background by Hannes Delbeke on SketchFab
 
-Crate models by
+Crate models by Amanda 3D
 
-Snow Package by
+ATS Snow Suite by FORST
 
-Winter Zone Mini 1.0 by
+Snowy Low Poly Trees by False Wisp Studios
 
-Photoscanned Mountain Rocks by
+Winter Zone Mini 1.0 by MeshZone3D
 
-Low Poly Flowers by
+Photoscanned Mountain Rocks by The Tales Factory
+
+Low Poly Flowers by CHLYANG
 
 ->DONE
