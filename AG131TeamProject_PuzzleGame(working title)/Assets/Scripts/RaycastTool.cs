@@ -50,6 +50,11 @@ public class RaycastTool : MonoBehaviour
                     //Call down() in other objects pickup script
                     hit.transform.SendMessage("down");
 
+                    if (hit.transform.GetComponent<PushPull>())
+                    {
+                        hit.transform.SendMessage("usePullPush");
+                    }
+
                     //Check for gem type script on object
                     if (hit.transform.GetComponent<BlueGem>())
                     {
@@ -66,6 +71,11 @@ public class RaycastTool : MonoBehaviour
 
                     //Call onUp() in other objects pickup script
                     hit.transform.SendMessage("onUp");
+
+                    if (hit.transform.GetComponent<PushPull>())
+                    {
+                        hit.transform.SendMessage("pushPullUp");
+                    }
 
                     if (hit.transform.GetComponent<BlueGem>())
                     {
