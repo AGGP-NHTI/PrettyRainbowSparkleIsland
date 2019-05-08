@@ -18,7 +18,15 @@ public class PushPull : MonoBehaviour
 
     private float OriginalSpeed;
 
-    void OnMouseDown()
+    public void Update()
+    {
+        if (Input.GetAxisRaw("Fire1") > 0)
+        {
+            usePullPush();
+        }
+    }
+
+    void usePullPush()
     {
         //if statement here so that you can only push objects close enough to you
         if (RaycastTool.PushPullRange == true)
