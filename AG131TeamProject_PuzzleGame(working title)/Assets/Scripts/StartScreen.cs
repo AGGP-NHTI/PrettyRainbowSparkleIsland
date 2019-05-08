@@ -79,7 +79,14 @@ public class StartScreen : MonoBehaviour
     // Tell the button what to do when we press it
         button.onClick.AddListener(delegate {
 					OnClickChoiceButton(choice); });
-
+                if(Input.GetButtonDown("Jump"))
+                {
+                    OnClickChoiceButton(startup.currentChoices[0]);
+                }
+                else if(Input.GetButtonDown("Fire2"))
+                {
+                    OnClickChoiceButton(startup.currentChoices[1]);
+                }
 			}
 		}
 	
