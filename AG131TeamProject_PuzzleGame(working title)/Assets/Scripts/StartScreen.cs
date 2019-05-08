@@ -9,6 +9,9 @@ using Ink.Runtime;
 public class StartScreen : MonoBehaviour
 {
 
+    bool startgame = false;
+    bool endgame = false ;
+
     public TextAsset start;
     private Story startup;
     public Canvas canvas;
@@ -27,7 +30,15 @@ public class StartScreen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Screen();
+        if (Input.GetAxis("Fire2") > 0)
+        {
+            endgame = true;
+        }
+        else if(Input.GetAxis("Jump") > 0)
+        {
+            startgame = true;
+        }
     }
 
     public void Screen()
@@ -79,12 +90,14 @@ public class StartScreen : MonoBehaviour
     // Tell the button what to do when we press it
         button.onClick.AddListener(delegate {
 					OnClickChoiceButton(choice); });
-                if(Input.GetButtonDown("Jump"))
+                if(startgame == true)
                 {
+                    Debug.Log("YES");
                     OnClickChoiceButton(startup.currentChoices[0]);
                 }
-                else if(Input.GetButtonDown("Fire2"))
+                else if(endgame == true)
                 {
+                    Debug.Log("NO");
                     OnClickChoiceButton(startup.currentChoices[1]);
                 }
 			}
