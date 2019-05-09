@@ -12,26 +12,14 @@ public class PushPull : MonoBehaviour
     //used for highlighting the object that you can interact with
     private Color startColor;
 
-    //used to determine the distance between player and object trying to pickup
-    private float distanceDiffx;
-    private float distanceDiffz;
-
     private float OriginalSpeed;
 
     public void usePullPush()
-    {
-        //if statement here so that you can only push objects close enough to you
-        //if (RaycastTool.PushPullRange == true)
-        //{
-        Debug.Log("USEPULLPUSH");
-
+    {        
             lockRot = true;
-            GetComponent<Rigidbody>().useGravity = false;
             this.transform.parent = GameObject.Find("PlayerController").transform;
             OriginalSpeed = GameObject.Find("PlayerController").GetComponent<Movement>().speed;
             GameObject.Find("PlayerController").GetComponent<Movement>().speed = 2.0f;
-        //}
-
     }
 
 
@@ -42,15 +30,10 @@ public class PushPull : MonoBehaviour
 
     public void pushPullUp()
     {
-        //if (RaycastTool.PushPullRange == true)
-        //{
             lockRot = false;
             lockMove = false;
             this.transform.parent = null;
-            GetComponent<Rigidbody>().useGravity = true;
             GameObject.Find("PlayerController").GetComponent<Movement>().speed = 10.0f;
-        //}
-
     }
     void OnMouseEnter()
     {

@@ -37,6 +37,7 @@ public class Camera : MonoBehaviour
         //Locks ability to look past stright up and down
         mouseLook.y = Mathf.Clamp(mouseLook.y, -90f, 90f);
 
+        //Uses this code if not locked
         if(PushPull.lockRot == false)
         {
             //Rotate camera up/down

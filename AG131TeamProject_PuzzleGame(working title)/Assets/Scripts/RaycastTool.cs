@@ -14,6 +14,7 @@ public class RaycastTool : MonoBehaviour
     public static bool PushPullRange = false;
 
 
+
     //[SerializeField]
     //private LayerMask layerMaskInteract;
 
@@ -56,6 +57,7 @@ public class RaycastTool : MonoBehaviour
                     {
                         Debug.Log("PUSH PULL FOUND");
                         hit.transform.SendMessage("usePullPush");
+                        gameObject.GetComponent<Camera>().enabled = false;
                     }
 
                     //Check for gem type script on object
@@ -81,6 +83,7 @@ public class RaycastTool : MonoBehaviour
                     if (hit.transform.GetComponent<PushPull>())
                     {
                         hit.transform.SendMessage("pushPullUp");
+                        gameObject.GetComponent<Camera>().enabled = true;
                     }
 
                     if (hit.transform.GetComponent<BlueGem>())
