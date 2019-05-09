@@ -48,7 +48,7 @@ public class PushPull : MonoBehaviour
             lockMove = false;
             this.transform.parent = null;
             GetComponent<Rigidbody>().useGravity = true;
-            GameObject.Find("PlayerController").GetComponent<Movement>().speed = OriginalSpeed;
+            GameObject.Find("PlayerController").GetComponent<Movement>().speed = 10.0f;
         //}
 
     }
