@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0019897935, g: 0.011373024, b: 0.029857056, a: 1}
+  m_IndirectSpecularColor: {r: 0.0019837357, g: 0.011371099, b: 0.029861446, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -6196,6 +6196,11 @@ PrefabInstance:
       propertyPath: translated
       value: 
       objectReference: {fileID: 4900000, guid: fb2b40ec509dcef44a496ccbe7b030df, type: 3}
+    - target: {fileID: 9039611660890988009, guid: 96df49ddd7ee3a947b2a73f350e42125,
+        type: 3}
+      propertyPath: starttimer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96df49ddd7ee3a947b2a73f350e42125, type: 3}
 --- !u!1 &88184094 stripped
@@ -21735,6 +21740,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300018, guid: b332dc24cbb08144da2f112f82406700, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 85fb7ee31c847b74fa91ed2e43ab856f, type: 2}
     - target: {fileID: 400012, guid: b332dc24cbb08144da2f112f82406700, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.4313
@@ -21747,10 +21756,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.00804
       objectReference: {fileID: 0}
-    - target: {fileID: 2300018, guid: b332dc24cbb08144da2f112f82406700, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 85fb7ee31c847b74fa91ed2e43ab856f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b332dc24cbb08144da2f112f82406700, type: 3}
 --- !u!1001 &839837509
@@ -50648,6 +50653,11 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 2123586551}
+    - target: {fileID: 9039611660890988009, guid: 96df49ddd7ee3a947b2a73f350e42125,
+        type: 3}
+      propertyPath: starttimer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96df49ddd7ee3a947b2a73f350e42125, type: 3}
 --- !u!1001 &1868439550
