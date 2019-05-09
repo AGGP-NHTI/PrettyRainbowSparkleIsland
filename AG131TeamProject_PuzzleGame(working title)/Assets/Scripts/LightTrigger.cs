@@ -5,13 +5,13 @@ using UnityEngine;
 public class LightTrigger : MonoBehaviour
 {
     GameObject flower;
-    public Material flowerMat;
+    public Material defaultGlow, brightGlow;
+    public GameObject pedals;
     // Update is called once per frame
 
     public void Start()
     {
-        flower = gameObject;
-        //flowerMat = flower.GetComponent<Renderer>().material;
+
     }
 
     void OnTriggerEnter(Collider other)
@@ -20,7 +20,7 @@ public class LightTrigger : MonoBehaviour
         if (other.transform.CompareTag("Player"))
         {
             //flowerMat.color.em
-            flowerMat.EnableKeyword("_EMISSION");
+            pedals.GetComponent<Renderer>().material = brightGlow;
         }
 
         //flowerlight.intensity = 20;
@@ -30,7 +30,7 @@ public class LightTrigger : MonoBehaviour
         //flowerlight.intensity = 0;
         if (other.transform.CompareTag("Player"))
         {
-            flowerMat.DisableKeyword("_EMISSION");
+            pedals.GetComponent<Renderer>().material = defaultGlow;
         }
   
     }
