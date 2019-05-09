@@ -71,9 +71,12 @@ public class RaycastTool : MonoBehaviour
                 }
                 else
                 {
-
-                    //Call onUp() in other objects pickup script
-                    hit.transform.SendMessage("onUp");
+                    if(hit.transform.GetComponent<Pickup>())
+                    {
+                        //Call onUp() in other objects pickup script
+                        hit.transform.SendMessage("onUp");
+                    }
+                 
 
                     if (hit.transform.GetComponent<PushPull>())
                     {
