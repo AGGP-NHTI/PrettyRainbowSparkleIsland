@@ -2,7 +2,7 @@
 
 
 ==Start==
-KARATE ISLAND
+TREASURES BEYOND
 by Team PrettyRainbowSparkleIsland
 
 *[Start Game]
