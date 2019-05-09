@@ -204,7 +204,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 85fb7ee31c847b74fa91ed2e43ab856f, type: 2}
+  - {fileID: 2100000, guid: 1bf3d7b00e8476e4f8d4a33354e2f40d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -485,7 +485,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d12b8cf5a0a296148bc5559d6cded1b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flowerMat: {fileID: 2100000, guid: 85fb7ee31c847b74fa91ed2e43ab856f, type: 2}
+  defaultGlow: {fileID: 2100000, guid: 1bf3d7b00e8476e4f8d4a33354e2f40d, type: 2}
+  brightGlow: {fileID: 2100000, guid: 452e9147ef20b3043b3f0fffd90bd4e9, type: 2}
+  pedals: {fileID: 1756127063291809859}
 --- !u!1 &1756127063291809881
 GameObject:
   m_ObjectHideFlags: 0
