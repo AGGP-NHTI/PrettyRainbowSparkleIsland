@@ -11,6 +11,7 @@ public class PushPull : MonoBehaviour
 
     //used for highlighting the object that you can interact with
     private Color startColor;
+    public Color objColor;
 
     private float OriginalSpeed;
 
@@ -38,7 +39,7 @@ public class PushPull : MonoBehaviour
     void OnMouseEnter()
     {
         startColor = this.GetComponent<Renderer>().material.color;
-        GetComponent<Renderer>().material.color = Color.yellow;
+        GetComponent<Renderer>().material.color = objColor;
     }
 
     void OnMouseExit()
